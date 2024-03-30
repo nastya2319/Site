@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Милая Будка | Животные</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="assets/logo.png">
+            <a href="index.html">Милая Будка</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Главная</a>
+            <a class="selected" href="works.html">Животные</a>
+            <a href="single-work.html">Работники</a>
+            <a href="blog.html">Новости</a>
+            <a href="about.html">О нас</a>
+            <button class="pekluch" id="pekluch">Темнота</button>
+        </div>
+    </nav>
+
+    <script src="darkmode.js"></script>
+
+    <h1 class="page-title">Животные</h1>
+    
+
+    <div class="content">
+        <div class="works-list">
+            <div class="item">
+                <img src="assets/Biba.png">
+                <div class="details">
+                    <h3>Биба, Боба и Толя</h3>
+                    <div class="item-info">
+                        <div class="year-badge">2023</div>
+                        <h4>Кролик</h4>
+                    </div>
+                    <p>Три родных брата. Все делают вместе: спят, едят, гуляют и даже фоткаются. Любят морковку и семочки подсолнуха. Шерсть у каждого мягкая и нежная.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/Zoro.png">
+                <div class="details">
+                    <h3>Зоро</h3>
+                    <div class="item-info">
+                        <div class="year-badge">2022</div>
+                        <h4>Немецкая овчарка</h4>
+                    </div>
+                    <p>Бывший полицейский. Самый дисципленированный пес. Всегда слушает команды и выполняет приказы. Является примером для остальных. Помогает следить за порядком и маленькими животными.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/Dori.png">
+                <div class="details">
+                    <h3>Дори</h3>
+                    <div class="item-info">
+                        <div class="year-badge">2022</div>
+                        <h4>Доберман</h4>
+                    </div>
+                    <p>Является ненастоящей, но все же мамой для маленьких жителей приюта. Она следит за всеми, кормит, играется. Так же является одной из старшей в приюте.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/Sanni.png">
+                <div class="details">
+                    <h3>Санни</h3>
+                    <div class="item-info">
+                        <div class="year-badge">2023</div>
+                        <h4>Манчкин</h4>
+                    </div>
+                    <p>Один из малышей приюта. Пока что он азарной и любит гулятся. Часто попадает в передряги. Любит лазить на высокие объекты, но слезть уже не может.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/Eshka.png">
+                <div class="details">
+                    <h3>Ешка</h3>
+                    <div class="item-info">
+                        <div class="year-badge">2022</div>
+                        <h4>Енот</h4>
+                    </div>
+                    <p>Единственный енот в нашем приюте. Ему сложно найти общий язык с другими животными, но он старается. Любит сладкую вату и фоткаться.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="center-buttons">
+        <!-- Три кнопки-ссылки -->
+        <a href="works.html" class="button">1</a>
+        <a href="works2.html" class="button">2</a>
+        <a href="works3.html" class="button3">3</a>
+    </div>
+
+    <footer>
+        <div class="socials">
+            <i class='bx bxl-facebook-square'></i>
+            <i class='bx bxl-instagram'></i>
+            <i class='bx bxl-twitter'></i>
+            
+        </div>
+        <p>Copyright ©2024, All rights reserved.</p>
+    </footer>
+
+
+
+    <script>
+        const toggleButton = document.getElementById('pekluch');
+        const body = document.body;
+    
+        toggleButton.addEventListener('click', function() {
+            // Добавляем или удаляем класс 'dark-mode' для переключения темы
+            body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+
+</html>

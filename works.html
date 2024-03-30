@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Милая Будка | Животные</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="assets/logo.png">
+            <a href="index.html">Милая Будка</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Главная</a>
+            <a class="selected" href="works.html">Животные</a>
+            <a href="single-work.html">Работники</a>
+            <a href="blog.html">Новости</a>
+            <a href="about.html">О нас</a>
+            <button class="pekluch" id="pekluch">Темнота</button>
+        </div>
+    </nav>
+
+    <script src="darkmode.js"></script>
+
+    <h1 class="page-title">Животные</h1>
+    
+
+    <div class="content">
+        <div class="works-list">
+            <div class="item">
+                <img src="assets/item-1.jpg">
+                <div class="details">
+                    <h3>Шурка</h3>
+                    <div class="item-info">
+                        <div class="year-badge">2022</div>
+                        <h4>Кокер-спаниель</h4>
+                    </div>
+                    <p>Послушный и умный пес. Следит за порядком в приюте. Является лидером среди животных. С людбми ведет себя сдержано, но очень ласково.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/item-2.jpg">
+                <div class="details">
+                    <h3>Арчи</h3>
+                    <div class="item-info">
+                        <div class="year-badge">2022</div>
+                        <h4>Европейская кошка</h4>
+                    </div>
+                    <p>Лучший друг как и человека, так и всех животных в приюте. Любит со всеми играться. Очень энергичен, но и очень нежный.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/item-3.jpg">
+                <div class="details">
+                    <h3>Джасти</h3>
+                    <div class="item-info">
+                        <div class="year-badge">2023</div>
+                        <h4>Шотландская вислоухая кошка</h4>
+                    </div>
+                    <p>Один из самых молодых житлей нашего ютного приюта. Сам по себе не общительный. Любит сидеть на солнце и спать.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/item-4.jpg">
+                <div class="details">
+                    <h3>Лилит</h3>
+                    <div class="item-info">
+                        <div class="year-badge">2021</div>
+                        <h4>Хаски</h4>
+                    </div>
+                    <p>Самая старшая из всех животных в прюте. Но, не смотря на возрост, все так же резвится со своими друзьями и посетителями нашего прекстного места.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/item-5.jpg">
+                <div class="details">
+                    <h3>Тёма</h3>
+                    <div class="item-info">
+                        <div class="year-badge">2022</div>
+                        <h4>Сиба-ину</h4>
+                    </div>
+                    <p>Один из самых ранимых и нежных жильцов нашего приюта. Мало с кем дружит из животных. Предпочитает больше находится рядом с работниками и посетителями.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="center-buttons">
+        <!-- Три кнопки-ссылки -->
+        <a href="works.html" class="button3">1</a>
+        <a href="works2.html" class="button">2</a>
+        <a href="works3.html" class="button">3</a>
+    </div>
+
+    <footer>
+        <div class="socials">
+            <i class='bx bxl-facebook-square'></i>
+            <i class='bx bxl-instagram'></i>
+            <i class='bx bxl-twitter'></i>
+            
+        </div>
+        <p>Copyright ©2024, All rights reserved.</p>
+    </footer>
+
+
+
+    <script>
+        const toggleButton = document.getElementById('pekluch');
+        const body = document.body;
+    
+        toggleButton.addEventListener('click', function() {
+            // Добавляем или удаляем класс 'dark-mode' для переключения темы
+            body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+
+</html>

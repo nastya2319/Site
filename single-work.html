@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Милая Будка | Работники</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="assets/logo.png">
+            <a href="index.html">Милая Будка</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Главная</a>
+            <a href="works.html">Животные</a>
+            <a class="selected" href="single-work.html">Работники</a>
+            <a href="blog.html">Новости</a>
+            <a href="about.html">О нас</a>
+            <button class="pekluch" id="pekluch">Темнота</button>
+        </div>
+    </nav>
+
+    <script src="darkmode.js"></script>
+
+    <h1 class="page-title">Работники</h1>
+
+    <div class="content">
+        <div class="works-list">
+            <div class="item">
+                <img src="assets/director.png">
+                <div class="details">
+                    <h3>Жарка Антонина Олеговна</h3>
+                    <div class="item-info">
+                        <div class="year-badge">1969</div>
+                        <h4>Директор</h4>
+                    </div>
+                    <p>Жарка Антонина Олеговна является создателем и директором приюта Милая Будка. Она создала вместе со своей семьёй приют в 2022 году. С тех пор она усердно работает для своих животных.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/Ekaterina.png">
+                <div class="details">
+                    <h3>Жарко Екатерина Павловна</h3>
+                    <div class="item-info">
+                        <div class="year-badge">1998</div>
+                        <h4>Заместитель директора</h4>
+                    </div>
+                    <p>Жарко Екатерина Павловна является одним из создателей приюта Милая Будка. Работает по большей степени с документами, но так же старается уделять время животным.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/Andre.png">
+                <div class="details">
+                    <h3>Сидоров Андрей Дмитриевич</h3>
+                    <div class="item-info">
+                        <div class="year-badge">1993</div>
+                        <h4>Дрессировщик</h4>
+                    </div>
+                    <p>Сидоров Андрей Дмитриевич является дрессировщиком с 8-летним стажем работы. Адрей следит за животными, за их питанием, самочувствием. Так же занимается их дрессировкой.</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer>
+        <div class="socials">
+            <i class='bx bxl-facebook-square'></i>
+            <i class='bx bxl-instagram'></i>
+            <i class='bx bxl-twitter'></i>
+            
+        </div>
+        <p>Copyright ©2024, All rights reserved.</p>
+    </footer>
+
+
+    <script>
+        const toggleButton = document.getElementById('pekluch');
+        const body = document.body;
+    
+        toggleButton.addEventListener('click', function() {
+            // Добавляем или удаляем класс 'dark-mode' для переключения темы
+            body.classList.toggle('dark-mode');
+        });
+    </script>
+
+</body>
+
+</html>

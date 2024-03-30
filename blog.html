@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Милая Будка | Новости</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="assets/logo.png">
+            <a href="index.html">Милая Будка</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Главная</a>
+            <a href="works.html">Животные</a>
+            <a href="single-work.html">Работники</a>
+            <a class="selected" href="blog.html">Новости</a>
+            <a href="about.html">О нас</a>
+            <button class="pekluch" id="pekluch">Темнота</button>
+        </div>
+    </nav>
+
+    <script src="darkmode.js"></script>
+
+
+    <h1 class="page-title">Новости</h1>
+
+    <div class="content">
+        <div class="post-list">
+            <div class="post-item">
+                <h3>Успешная акция</h3>
+                <div class="info">
+                    <h5>1 Февраля 2024</h5>
+                    <h5>|</h5>
+                    <h5>Акция, животные</h5>
+                </div>
+                <p>Приют для животных провел успешную акцию по усыновлению: 20 собак и 15 кошек нашли новые дома за прошлую неделю.</p>
+
+                <div class="buttons">
+                    <i class='bx bx-share'></i>
+                    <i class='bx bx-link-alt'></i>
+                    <i class='bx bx-copy'></i>
+                    <i class='bx bx-bookmark-plus'></i>
+                    <button>Read More</button>
+                </div>
+
+            </div>
+            <div class="post-item">
+                <h3>Мастре-класс</h3>
+                <div class="info">
+                    <h5>27 Января 2024</h5>
+                    <h5>|</h5>
+                    <h5>Мастре-класс, волонтерство</h5>
+                </div>
+                <p>Волонтеры приюта провели мастер-класс по уходу за бездомными животными для местных школьников.</p>
+                <div class="buttons">
+                    <i class='bx bx-share'></i>
+                    <i class='bx bx-link-alt'></i>
+                    <i class='bx bx-copy'></i>
+                    <i class='bx bx-bookmark-plus'></i>
+                    <button>Read More</button>
+                </div>
+            </div>
+
+            <div class="post-item">
+                <h3>Благотворительный фонд</h3>
+                <div class="info">
+                    <h5>24 Января 2024</h5>
+                    <h5>|</h5>
+                    <h5>Помощь, благотворительность</h5>
+                </div>
+                <p>Благотворительный фонд выделил приюту средства на ремонт помещений и покупку нового ветеринарного оборудования.</p>
+                <div class="buttons">
+                    <i class='bx bx-share'></i>
+                    <i class='bx bx-link-alt'></i>
+                    <i class='bx bx-copy'></i>
+                    <i class='bx bx-bookmark-plus'></i>
+                    <button>Read More</button>
+                </div>
+            </div>
+
+            <div class="post-item">
+                <h3>День открытых дверей</h3>
+                <div class="info">
+                    <h5>16 Января 2024</h5>
+                    <h5>|</h5>
+                    <h5>Животные, день открытых дверей</h5>
+                </div>
+                <p>Приют организовал мероприятие 'День открытых дверей', привлекая внимание к важности усыновления животных.</p>
+                <div class="buttons">
+                    <i class='bx bx-share'></i>
+                    <i class='bx bx-link-alt'></i>
+                    <i class='bx bx-copy'></i>
+                    <i class='bx bx-bookmark-plus'></i>
+                    <button>Read More</button>
+                </div>
+            </div>
+
+            <div class="post-item">
+                <h3>Школа дрессировки</h3>
+                <div class="info">
+                    <h5>1 Января 2024</h5>
+                    <h5>|</h5>
+                    <h5>Дрессировка, школа</h5>
+                </div>
+                <p>Приют запустил программу 'Школа дрессировки', помогая приручить поведение и улучшить шансы на усыновление для своих подопечных.</p>
+                <div class="buttons">
+                    <i class='bx bx-share'></i>
+                    <i class='bx bx-link-alt'></i>
+                    <i class='bx bx-copy'></i>
+                    <i class='bx bx-bookmark-plus'></i>
+                    <button>Read More</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="socials">
+            <i class='bx bxl-facebook-square'></i>
+            <i class='bx bxl-instagram'></i>
+            <i class='bx bxl-twitter'></i>
+            
+        </div>
+        <p>Copyright ©2024, All rights reserved.</p>
+    </footer>
+
+
+    <script>
+        const toggleButton = document.getElementById('pekluch');
+        const body = document.body;
+    
+        toggleButton.addEventListener('click', function() {
+            // Добавляем или удаляем класс 'dark-mode' для переключения темы
+            body.classList.toggle('dark-mode');
+        });
+    </script>
+
+</body>
+
+</html>
